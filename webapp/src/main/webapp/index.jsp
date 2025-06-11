@@ -1,37 +1,75 @@
-<form action="action_page.php">
-  <div class="container">
-    <h1>New user Register for DevOps Learning</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-     
-    <label for="Name"><b>Enter Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
-    <br>
-    
-    <label for="mobile"><b>Enter mobile</b></label>
-    <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
-    <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>⚽ Soccer Super Sale!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
 
-    <label for="email"><b>Enter Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
-    <br>
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-    <br>
+    h1 {
+      font-size: 3rem;
+      color: #00ffcc;
+      margin-bottom: 1rem;
+    }
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <hr>
-    <br>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Register</button>
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .promo-box {
+      background-color: #007bff;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 2rem;
+    }
+
+    a.cta-button {
+      background-color: #28a745;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: background-color 0.3s;
+    }
+
+    a.cta-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>⚽ Score Big with Our Soccer Promo!</h1>
+    <p>Celebrate the season with up to <strong>50% off</strong> on all soccer gear and tickets to top matches.</p>
+    <div class="promo-box">
+      LIMITED TIME OFFER: June 11 – June 30
+    </div>
+    <a href="#" class="cta-button">Shop Now / Buy Tickets</a>
   </div>
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
+</body>
+</html>
 
-   <h1> Thankyou, Happy Learning </h1>
-
-  
-</form>
