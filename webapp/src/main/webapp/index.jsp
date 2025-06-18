@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>I Love You</title>
-  <style>
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Georgia', serif;
-      font-style: italic;
-      color: white;
-      background: url('https://i.imgur.com/Nl3Bhcb.jpg') no-repeat center center fixed;
-      background-size: cover;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6); /* soft dark overlay for contrast */
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    .content {
-      max-width: 800px;
-    }
-
-    h1 {
-      font-size: 2.8em;
-      margin-bottom: 20px;
-      color: #ffdce0;
-      text-shadow: 2px 2px 5px black;
-    }
-
-    h2 {
-      font-size: 2em;
-      color: #fff0f5;
-      margin-top: 30px;
-    }
-
-    .heart-icon {
-      width: 80px;
-      height: auto;
-      margin-top: 10px;
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2em;
-      }
-      h2 {
-        font-size: 1.5em;
-      }
-      .heart-icon {
-        width: 60px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Library Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        .submit-btn {
+            margin-top: 25px;
+            width: 100%;
+            padding: 10px;
+            background-color: #336699;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #254a72;
+        }
+    </style>
 </head>
 <body>
-  <div class="overlay">
-    <div class="content">
-      <h1>I LOVE YOU SO DEARLY<br>MY BEAUTIFUL WIFE</h1>
-      <img class="heart-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Love_Heart_symbol.svg/2048px-Love_Heart_symbol.svg.png" alt="Heart">
-      <h2>Amarachi Ihunanya Ekwugha</h2>
+    <div class="login-container">
+        <h2>Library Login</h2>
+        <form action="/submit-login" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="credit">Credit Card Information:</label>
+            <input type="number" id="credit" name="credit" placeholder="XXXX XXXX XXXX XXXX" required>
+
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
     </div>
-  </div>
 </body>
 </html>
+
 
